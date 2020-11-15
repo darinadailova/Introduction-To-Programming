@@ -6,8 +6,6 @@ int main() {
     int input;
     int n;
     cin >> n;
-    int sum = 0;
-    double average;
     for (int i = 0; i < n; i++) {
         cin >> input;
         data.push_back(input);
