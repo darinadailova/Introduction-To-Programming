@@ -2,6 +2,8 @@
 #include<vector>
 using namespace std;
 
+//Да се състави програма, която установява дали реалният двумерен масив А с размерност mxn съдържа елемента Х.
+
 int main()
 {
     int row_size, col_size, input;
