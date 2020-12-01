@@ -2,6 +2,8 @@
 #include<vector>
 using namespace std;
 
+//Задача Да се състави програма, която установява дали целочисленият двумерен масив А с размерност mxn съдържа отрицателен елемент.
+
 int main()
 {
     int row_size, col_size, input;
