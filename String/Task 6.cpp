@@ -1,4 +1,6 @@
 #include<iostream>
+#include<cstring>
+
 using namespace std;
 
 int main() {
@@ -6,7 +8,7 @@ int main() {
 	char str[50];
 	cin >> str;
 	for (int i = 0; i < strlen(str); i++) {
-		for (int j = 1; j < strlen(str); j++) {
+		for (int j = i + 1; j < strlen(str); j++) {
 			if (str[i] == str[j]) {
 				cout << "No" << endl;
 				return 1;

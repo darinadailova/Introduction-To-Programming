@@ -1,19 +1,23 @@
 #include<iostream>
-#include<ctype.h>
+#include<cstring>
+
 using namespace std;
 
-
+int toLower(int value) {
+	return (char)value + 32;
+}
 
 int main() {
 
-	char str[100];
+	char str[50];
 	cin >> str;
-	for (int i = 0; i < strlen(str); i++) {
-		str[i] = tolower(str[i]);
+	int size = strlen(str);
+	int value;
+	for (int i = 0; i < size; i++) {
+		value = int(str[i]);
+		str[i] = toLower(value);
 	}
-	for (int i = 0; i < strlen(str); i++) {
-		cout << str[i];
-	}
+	cout << str;
 
 	return 0;
 }
