@@ -1,5 +1,16 @@
 #include <iostream>
 
+int sum(int&, const int&);
+
+int main() {
+
+    int number = 45634;
+    int k = 2;
+    std::cout << sum(number, k) << '\n';
+
+    return 0;
+}
+
 int sum(int& number, const int& k) {
     int sum = 0;
     int count = 0;
@@ -16,13 +27,4 @@ int sum(int& number, const int& k) {
     }
     //if the function returns -1 => k > count
     return -1;
-}
-
-int main() {
-
-    int number = 45634;
-    int k = 2;
-    std::cout << sum(number, k) << '\n';
-
-    return 0;
 }

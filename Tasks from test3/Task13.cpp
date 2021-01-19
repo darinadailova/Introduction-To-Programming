@@ -1,5 +1,18 @@
 #include <iostream>
 
+int stringLenght(char[]);
+void reverseArray(char[], const int&);
+
+int main() {
+
+    char arr[] = {"45-*sd\0"};
+    const int size = stringLenght(arr);
+    reverseArray(arr, size);
+    std::cout << arr;
+
+    return 0;
+}
+
 int stringLenght(char arr[]) {
     int count = 0;
     //the \0 is the end of char arrays
@@ -18,14 +31,4 @@ void reverseArray(char arr[], const int& size) {
         arr[i] = arr[size - 1 - i];
         arr[size - 1 - i] = temp;
     }
-}
-
-int main() {
-
-    char arr[] = {"45-*sd\0"};
-    const int size = stringLenght(arr);
-    reverseArray(arr, size);
-    std::cout << arr;
-
-    return 0;
 }

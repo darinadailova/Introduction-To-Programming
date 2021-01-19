@@ -17,7 +17,7 @@ void reverseNum(int& number) {
     int reminder;
     while(number != 0) {
         reminder = number % 10;
-        reversedNumber = reversedNumber*10 + reminder;
+        reversedNumber = reversedNumber * 10 + reminder;
         number = number / 10;
     }
 

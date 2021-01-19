@@ -1,5 +1,16 @@
 #include <iostream>
 
+int findSumOfKDigits(int&, const int&);
+
+int main() {
+
+    int number = 386;
+    int k = 2;
+    std::cout << findSumOfKDigits(number, k) << '\n';
+
+    return 0;
+}
+
 int findSumOfKDigits(int& number, const int& k) {
     int count = 0;
     int number1 = number;
@@ -28,14 +39,4 @@ int findSumOfKDigits(int& number, const int& k) {
     }
     
     return sum;
-}
-
-
-int main() {
-
-    int number = 386;
-    int k = 2;
-    std::cout << findSumOfKDigits(number, k) << '\n';
-
-    return 0;
 }
