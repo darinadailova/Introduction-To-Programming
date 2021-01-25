@@ -1,6 +1,35 @@
 #include <iostream>
 
-int sumOfElementsAboveMainDiagonal(const int& N, int arr[][100]) {
+int sumOfElementsAboveMainDiagonal(int&, int**);
+
+int main() {
+
+    int N;
+    std::cin >> N;
+
+    int** arr = new int*[N];
+    for(int i = 0; i < N; i++) {
+        arr[i] = new int[N];
+    }
+
+    for(int i = 0; i < N; i++) {
+        for(int j = 0; j < N; j++) {
+            std::cin >> arr[i][j];
+        }
+    }
+
+    std::cout << sumOfElementsAboveMainDiagonal(N, arr) << '\n';
+    
+    for(int i = 0; i < N; i++) {
+        delete[] arr[i];
+    }
+ 
+    delete[] arr;
+
+    return 0;
+}
+
+int sumOfElementsAboveMainDiagonal(int& N, int** arr) {
     
     int sum = 0;
     for(int i = 0; i < N - 1; i++) {
@@ -10,14 +39,4 @@ int sumOfElementsAboveMainDiagonal(const int& N, int arr[][100]) {
     }
 
     return sum;
-}
-
-int main() {
-
-    const int N = 5;
-    int arr[N][100] = {{1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}};
-
-    std::cout << sumOfElementsAboveMainDiagonal(N, arr) << '\n';
-
-    return 0;
 }
