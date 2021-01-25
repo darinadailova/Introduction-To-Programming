@@ -6,6 +6,7 @@ int* function() {
     const int f = 9;
     a[1] = f;
     a[2] = 4;
+    
     return a;
 }
 
