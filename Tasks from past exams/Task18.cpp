@@ -2,7 +2,7 @@
 //с размерност m и връща като резултат сумата на елементите които са по двата и диагонала.
 #include <iostream>
 
-double calculateMatrix(int**, int;
+double calculateMatrix(int**, int);
 
 int main() {
     int m;
