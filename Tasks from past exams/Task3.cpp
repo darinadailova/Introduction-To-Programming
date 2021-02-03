@@ -1,5 +1,16 @@
 #include <iostream>
 
+void printRectangle(int, int, char);
+
+int main() {
+    int N = 5;
+    int M = 8;
+    char toPrint = '*';
+    printRectangle(N, M, toPrint);
+
+    return 0;
+}
+
 void printRectangle(int N, int M, char toPrint) {
     const int NMAX = 25;
     const int MMAX = 80;
@@ -22,13 +33,4 @@ void printRectangle(int N, int M, char toPrint) {
     for(int i = 0; i < (NMAX - N) / 2; i++) {
         std::cout << '\n';
     }
-}
-
-int main() {
-    int N = 5;
-    int M = 8;
-    char toPrint = '*';
-    printRectangle(N, M, toPrint);
-
-    return 0;
 }
