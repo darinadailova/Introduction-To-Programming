@@ -1,5 +1,3 @@
-//Да се напише функция на C++, със сигнатура bool doExist(char* symbols, char* word), която 
-//проверява дали думата word, се среща в символният низ symbols, прочетен наобратно. 
 #include <iostream>
 
 int stringLength(char*);

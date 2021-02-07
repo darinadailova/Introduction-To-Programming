@@ -1,7 +1,5 @@
-//11.	Да се напише функция на С++, със сигнатура int CheckTimeStr(char []), която да проверява дали входния параметър е коректно изписан 
-//час във формат HH:MM:SS(HH - ча е във формат 0-24, ММ - минути, SS - секунди).
 #include <iostream>
-//HH:MM:SS
+
 int stringLength(char time[]) {
     int count  = 0;
     for(int i = 0; time[i] != '\0'; i++) {
