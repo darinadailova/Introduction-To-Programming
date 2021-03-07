@@ -8,6 +8,7 @@ int main() {
 	for (int i = 0; i < 50; ++i) {
 		cin >> arr[i];
 	}
+	
 	for (int i = 0; i < 50; i++) {
 		if (arr[i] == x) {
 			cout << "yes" << endl;

@@ -7,14 +7,17 @@ int main()
     int x;
     cin >> x;
     int count = 0;
-    for (int i = 0; i < 48; ++i) {
+
+    for (int i = 0; i < 49; ++i) {
         cin >> arr[i];
     }
-    for (int i = 0; i < 48; i++) {
+    
+    for (int i = 0; i < 49; i++) {
         if (arr[i] == x) {
             count += 1;
         }
     }
+    
     cout << count << endl;
 
     return 0;

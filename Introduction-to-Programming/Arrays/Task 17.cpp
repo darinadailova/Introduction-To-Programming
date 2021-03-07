@@ -12,6 +12,7 @@ int main() {
 		cin >> input;
 		vec.push_back(input);
 	}
+	
 	bool flag = false;
 	for (int i = 0; i < vec.size() / 2; i++) {
 		if (vec[i] == vec[vec.size() - i - 1]) {

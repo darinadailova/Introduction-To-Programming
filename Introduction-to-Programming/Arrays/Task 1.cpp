@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 
 	int numberOfGrades;
-	int arr[49];
+	int arr[50];
 	double averageGrade = 0;
 	int sum = 0;
 	cin >> numberOfGrades;
@@ -12,9 +12,11 @@ int main() {
 	for (int i = 0; i < numberOfGrades; ++i) {
 		cin >> arr[i];
 	}
+
 	for (int i = 0; i < numberOfGrades; i++) {
 		sum += arr[i];
 	}
+	
 	averageGrade = (double)sum / numberOfGrades;
 
 	cout << averageGrade << endl;

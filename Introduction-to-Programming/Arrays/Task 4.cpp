@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
@@ -11,10 +10,13 @@ int main()
     for (int i = 0; i < 49; ++i) {
         cin >> arr[i];
     }
+
     for (int i = 0; i < 49; i++) {
+
         if (arr[i] > maxNumber) {
             maxNumber = arr[i];
         }
+        
         if (arr[i] < minNumber) {
             minNumber = arr[i];
         }
@@ -22,4 +24,6 @@ int main()
 
     cout << minNumber << endl;
     cout << maxNumber << endl;
+
+    return 0;
 }

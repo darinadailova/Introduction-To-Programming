@@ -9,19 +9,18 @@ int main()
 	for (int i = 0; i < 49; ++i) {
 		cin >> arr[i];
 	}
+
 	for (int i = 0; i < 49; i++) {
 		for (int j = i + 1; j < 49; j++) {
 			if (arr[i] == arr[j]) {
 				cout << "no" << endl;
-				return 0;
-			}
-			else {
-				cout << "yes" << endl;
-				return 0;
+				return 1;
 			}
 
 		}
 	}
+
+	cout << "yes" << '\n';
 
 	return 0;
 }

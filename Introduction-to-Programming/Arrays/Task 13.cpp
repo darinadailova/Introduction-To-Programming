@@ -7,6 +7,7 @@ int main() {
 	for (int i = 0; i < 50; i++) {
 		cin >> arr[i];
 	}
+
 	for (int i = 0; i < 50; i++) {
 		for (int j = i + 1; j < 50; j++) {
 			double temp;
@@ -17,6 +18,7 @@ int main() {
 			}
 		}
 	}
+	
 	for (int i = 0; i < 50; i++) {
 		cout << arr[i] << " ";
 	}
