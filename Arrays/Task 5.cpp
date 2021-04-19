@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int arr[3];
     int maxNumber = INT_MIN;
     int nummberInTheArray;

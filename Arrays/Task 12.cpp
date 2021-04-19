@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int arr[50];
     for (int i = 0; i < 49; ++i) {
         cin >> arr[i];

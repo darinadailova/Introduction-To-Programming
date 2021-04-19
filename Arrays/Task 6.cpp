@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
 	int arrA[101];
 	int arrB[101];
 	int count = 0;

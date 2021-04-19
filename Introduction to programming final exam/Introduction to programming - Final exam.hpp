@@ -1,5 +1,4 @@
 #pragma once
-//Darina Dailova 62583
 
 int stringLength(char* str) {
 	int count = 0;
