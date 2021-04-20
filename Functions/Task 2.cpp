@@ -1,19 +1,17 @@
-//Задача Да се напише функция isEven(const int num), която връща дали дадено число е четно или не.
-
 #include<iostream>
 
-void isEven(const int num) {
+bool isEven(const int num) {
     if (num % 2 == 0) {
-        std::cout << "Yes" << '\n';
-    }else{
-    std::cout << "No" << '\n';
+        return true;
     }
+
+    return false;
 }
 
 int main(){
     int num;
     std::cin >> num;
-    isEven(num);
+    std::cout << isEven(num) << '\n';
     
     return 0;
 }

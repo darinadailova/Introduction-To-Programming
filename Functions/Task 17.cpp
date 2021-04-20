@@ -12,9 +12,6 @@ void sortArray(int arr[], int N) {
 			}
 		}
 	}
-	for (int i = 0; i < N; i++) {
-		cout << arr[i] << " ";
-	}
 }
 
 int main() {
@@ -27,5 +24,9 @@ int main() {
 	}
 	sortArray(arr, N);
 
+	for (int i = 0; i < N; i++) {
+		cout << arr[i] << " ";
+	}
+	
 	return 0;
 }

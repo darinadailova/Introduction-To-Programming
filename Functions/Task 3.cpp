@@ -1,5 +1,3 @@
-//Задача Да се напише функция min(int a, int b), която връща по-малкото от двете числа a и b.
-
 #include<iostream>
 
 int min(int a, int b) {
