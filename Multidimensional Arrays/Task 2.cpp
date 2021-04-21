@@ -2,10 +2,7 @@
 #include<vector>
 using namespace std;
 
-//Задача Да се състави програма, която намира броя на отрицателните елементи във всеки ред на двумерен масив.
-
-int main()
-{
+int main() {
     int row_size, col_size, input;
     cin >> row_size >> col_size;
     vector<vector<int>>vec(row_size);

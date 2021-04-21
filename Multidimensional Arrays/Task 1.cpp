@@ -2,10 +2,7 @@
 #include<vector>
 using namespace std;
 
-//Задача Да се състави програма, която намира и извежда минималният елемент на всеки ред на двумерен масив. На първия ред от стандартния вход да се въведат размерите на масива, а на следващите редове и самият масив.
-
-int main()
-{
+int main() {
     int row_size, col_size, input;
     cin >> row_size >> col_size;
     vector<vector<int>>matrix(row_size);
@@ -24,7 +21,7 @@ int main()
                 min = matrix[row][col];
             }
         }
-        cout << "The lowest element for row " << row + 1 << " is " << min << endl;
+        cout << "Min element in row " << row + 1 << " is " << min << endl;
     }
 
     return 0;

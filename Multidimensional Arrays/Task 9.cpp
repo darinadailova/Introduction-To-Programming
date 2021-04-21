@@ -2,10 +2,7 @@
 #include<vector>
 using namespace std;
 
-//Задача Дадена е квадратна реална матрица А с размерност kxk . Да се състави програма, която намира произведението от елементите извън вторичния главен диагонал.
-
-int main()
-{
+int main() {
     int k;
     cin >> k;
     vector<vector<double>>A(k);
@@ -17,6 +14,7 @@ int main()
             A[i].push_back(input);
         }
     }
+
     int product = 1;
     for (int i = 0; i < k; i++) {
         for (int j = 0; j < k; j++) {
@@ -25,6 +23,7 @@ int main()
             }
         }
     }
+
     cout << product << endl;
 
     return 0;

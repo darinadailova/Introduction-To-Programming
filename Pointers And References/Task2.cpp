@@ -8,8 +8,7 @@ int swap(int& a, int& b) {
     return (a, b);
 }
 
-int main()
-{
+int main() {
     int a, b;
     cin >> a >> b;
     swap(a, b);
