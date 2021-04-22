@@ -14,7 +14,6 @@ int countSpecialSymbols(char str[]) {
 }
 
 int main() {
-
 	char str[50];
 	cin >> str;
 	cout << countSpecialSymbols(str) << endl;

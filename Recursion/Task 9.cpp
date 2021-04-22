@@ -8,8 +8,7 @@ int numberOfDigits(int number) {
     return 1 + numberOfDigits(number / 10);
 }
 
-int main()
-{
+int main() {
     unsigned int number;
     cin >> number;
     cout << numberOfDigits(number) << endl;

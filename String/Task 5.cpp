@@ -9,6 +9,7 @@ int main() {
 	char S1[150];
 	char S2[150];
 	cin >> S1 >> S2;
+	
 	for (int i = 0; i < strlen(S1); i++) {
 		bool flag = true;
 		if (islower(S1[i])) {

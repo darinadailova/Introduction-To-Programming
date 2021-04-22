@@ -14,7 +14,6 @@ bool isPalindrome(char str[]) {
 
 
 int main() {
-
 	char str[50];
 	cin >> str;
 	if (isPalindrome(str)) {

@@ -16,8 +16,7 @@ bool isPalindrome(string str) {
     return isPalindrome(str);
 }
 
-int main()
-{
+int main() {
     string str;
     cin >> str;
     cout << isPalindrome(str) << endl;

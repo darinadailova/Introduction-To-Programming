@@ -8,8 +8,7 @@ int sum(int num) {
     return (num += sum(num - 1));
 }
 
-int main()
-{
+int main() {
     int num;
     cin >> num;
     cout << sum(num) << endl;

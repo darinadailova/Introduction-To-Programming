@@ -1,8 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int greatestCommonDivisor(int a, int b)
-{
+int greatestCommonDivisor(int a, int b) {
     if (a == 0) {
         return b;
     }
@@ -20,7 +19,6 @@ int greatestCommonDivisor(int a, int b)
 }
 
 int main() {
-
     int num1, num2;
     cin >> num1 >> num2;
     cout << greatestCommonDivisor(num1, num2) << endl;

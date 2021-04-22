@@ -13,18 +13,19 @@ bool isDifferent(char arr[], int& size) {
 	if (size <= 1) {
 		return true;
 	}
+
 	for (int i = size - 2; i >= 0; --i) {
 		if (arr[i] == arr[size - 1]) {
 			return false;
 		}
 	}
 	--size;
+	
 	return isDifferent(arr, size);
 }
 
 
-int main()
-{
+int main() {
 	char arr[50];
 	cin >> arr;
 	int size = stringLenght(arr);

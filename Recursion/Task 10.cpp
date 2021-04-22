@@ -13,8 +13,7 @@ bool containsDigit(int n, int k) {
     }
 }
 
-int main()
-{
+int main() {
     int n, k;
     cin >> n >> k;
     cout << containsDigit(n, k) << endl;

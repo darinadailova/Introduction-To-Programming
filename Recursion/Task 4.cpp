@@ -17,7 +17,6 @@ double power(double x, int n) {
 }
 
 int main() {
-
 	double x;
 	int n;
 	cin >> x >> n;
